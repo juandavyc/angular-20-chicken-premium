@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:ssr": "ng build --configuration=production && ng run fish-market:server:production",
+    "build": "ng build",
+    "build:ssr": "ng build && ng run fish-market:server",
     "serve:ssr": "node dist/fish-market/server/main.js",
     "dev:ssr": "ng run fish-market:serve-ssr",
     "prerender": "ng run fish-market:prerender",
