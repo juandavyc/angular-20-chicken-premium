@@ -1,15 +1,13 @@
 [build]
-  command = "npm install && npm run build:ssr"
+  command = "npm install && npm run build && npm run build:ssr"
   publish = "dist/fish-market/browser"
   functions = "dist/fish-market/server"
 
-[[plugins]]
-  package = "@netlify/angular-runtime"
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["@angular/platform-server"]
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[functions]
-  node_bundler = "esbuild"
