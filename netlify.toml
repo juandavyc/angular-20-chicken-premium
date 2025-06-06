@@ -1,0 +1,23 @@
+[build]
+  command = "npm install && npm run build:ssr"
+  publish = "dist/fish-market/browser"
+  functions = "dist/fish-market/server"
+
+[context.production.environment]
+  NODE_VERSION = "20.0.0"
+
+[[plugins]]
+  package = "@netlify/plugin-angular"
+  [plugins.inputs]
+    angularVersion = 20
+
+[dev]
+  framework = "angular"
+  command = "npm run start"
+  targetPort = 4200
+  autoLaunch = false
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
