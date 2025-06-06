@@ -5,10 +5,6 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ssr": "ng build && ng run fish-market:server",
-    "serve:ssr": "node dist/fish-market/server/main.js",
-    "dev:ssr": "ng run fish-market:serve-ssr",
-    "prerender": "ng run fish-market:prerender",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:fish-market": "node dist/fish-market/server/server.mjs"
