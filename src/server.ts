@@ -1,13 +1,14 @@
-import {
-  AngularNodeAppEngine,
-  createNodeRequestHandler,
-  isMainModule,
-  writeResponseToNodeResponse,
-} from '@angular/ssr/node';
-import express from 'express';
-import { join } from 'node:path';
+import { CommonEngine } from '@angular/ssr/node'
+import { render } from '@netlify/angular-runtime/common-engine.mjs'
 
-const browserDistFolder = join(import.meta.dirname, '../browser');
+const commonEngine = new CommonEngine()
 
-const app = express();
-const angularApp = new AngularNodeAppEngine();
+export async function netlifyCommonEngineHandler(request: Request, context: any): Promise<Response> {
+  // Ejemplo de endpoint API en Netlify (descomentar si necesitas)
+  // const pathname = new URL(request.url).pathname;
+  // if (pathname === '/api/hello') {
+  //   return Response.json({ message: 'Hello desde la API' });
+  // }
+
+  return await render(commonEngine)
+}
