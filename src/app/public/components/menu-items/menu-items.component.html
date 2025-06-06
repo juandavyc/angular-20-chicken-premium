@@ -1,0 +1,27 @@
+<ul class="text-sm uppercase text-white gap-1" [class]="menuClasses()">
+  <li>
+    <a [routerLink]="['/']"
+      routerLinkActive="bg-white text-neutral shadow-sm rounded-xl"
+      [routerLinkActiveOptions]="{exact:true}">
+        Inicio
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/about-us']"
+      routerLinkActive="bg-white text-neutral shadow-sm rounded-xl">
+        Nosotros
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/shop']"
+      routerLinkActive="bg-white text-neutral shadow-sm rounded-xl">
+        Tienda
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/contact-us']"
+      routerLinkActive="bg-white text-neutral shadow-sm rounded-xl">
+        Contacto
+    </a>
+  </li>
+</ul>

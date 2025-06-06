@@ -1,0 +1,41 @@
+.hero-background {
+  background-repeat: cover;
+}
+
+.hero-overlay {
+  background-color: rgba(48, 48, 48, 0.307);
+}
+
+.hero-bg {
+  transition: background-image 1s ease-in-out;
+}
+
+.clip-diagonals {
+  clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.clip-both-diagonals {
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+/* .slide-content {
+  position: relative;
+  text-align: center;
+} */
+
+/* .slide-content img {
+  width: 100%;
+  max-height: 70vh;
+  border-radius: 10px;
+} */
+
+/* .caption {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-size: 1.2rem;
+} */

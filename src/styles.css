@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-warning: yellow;
+  --color-error: #FF0010;
+
+
+}
+
+
+body {
+  font-family: 'Roboto', Helvetica, sans-serif
+}
+@layer base {
+  ::placeholder {
+   @apply text-gray-400;
+  }
+}
