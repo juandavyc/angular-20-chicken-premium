@@ -4,9 +4,8 @@
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
-  --color-warning: yellow;
+  /* --color-warning: yellow; */
   --color-error: #FF0010;
-
 
 }
 
@@ -17,5 +16,13 @@ body {
 @layer base {
   ::placeholder {
    @apply text-gray-400;
+  }
+}
+
+@layer utilities {
+  @supports (color: color-mix(in lab, red, red)) {
+    .stats-horizontal .stat:not(:last-child) {
+      border-inline-end: var(--border) dashed color-mix(in oklab, currentColor 10%, #0000002e);
+    }
   }
 }

@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { AppAssets } from '@core/configs';
 import { environment } from 'src/environments/environment';
 
 
@@ -13,6 +14,7 @@ import { environment } from 'src/environments/environment';
 })
 export class LogoComponent {
 
-  public readonly appName = environment.appName;
+  protected readonly appName = environment.appName;
+  protected readonly appLogoSmall = AppAssets.logo.small;
 
 }

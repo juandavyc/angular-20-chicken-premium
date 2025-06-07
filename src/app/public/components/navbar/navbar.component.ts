@@ -9,7 +9,7 @@ import { MenuItemsComponent } from '../menu-items/menu-items.component';
     MenuItemsComponent,
   ],
   host: {
-    'class': 'navbar bg-error shadow-lg shadow-neutral-300',
+    'class': 'navbar bg-gradient-to-t from-red-700 to-red-600 shadow-lg shadow-neutral-300',
   },
   templateUrl: './navbar.component.html',
   //changeDetection: ChangeDetectionStrategy.OnPush,

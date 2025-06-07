@@ -1,0 +1,36 @@
+<div class="swiper">
+  <swiper-container class="single-slider max-h-[70vh]" autoplay-disable-on-interaction="false" effect="fade" #swiperRef>
+    @for (slide of slides; track $index;) {
+      <swiper-slide class="slide">
+        <div class="relative">
+          <img class="w-full h-[70vh] object-cover object-center"
+            [src]="slide.background" />
+            <!--  -->
+          <div class="absolute top-0 w-full h-full bg-neutral/50 backdrop-blur-[1px] flex flex-col justify-center items-center">
+            <div class="w-[90vw] flex flex-col lg:flex-row-reverse justify-between items-center gap-5">
+              <div class="flex ">
+                <img class="rounded-lg animate-soft-bounce max-w-96 h-48"
+                  alt="pasteleria jb - logo"
+                  [src]="slide.logo" />
+              </div>
+              <div class="flex flex-col gap-5 lg:text-start text-center text-white">
+                <h2 class="text-3xl lg:text-5xl ">
+                  {{slide.title}}
+                </h2>
+                <p class="text-lg md:text-xl font-semibold">
+                  {{slide.subtitle}}
+                </p>
+                <div class="flex lg:justify-start justify-center">
+                  <button class="bg-lime-600 hover:bg-lime-900 border-b-4 border-lime-900 text-white px-6 py-3 rounded-lg shadow">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                      {{slide.action.title}}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+    }
+  </swiper-container>
+</div>

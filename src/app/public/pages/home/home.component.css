@@ -1,10 +1,10 @@
-.hero-background {
+/* .hero-background {
   background-repeat: cover;
 }
 
 .hero-overlay {
   background-color: rgba(48, 48, 48, 0.307);
-}
+} */
 
 .hero-bg {
   transition: background-image 1s ease-in-out;
