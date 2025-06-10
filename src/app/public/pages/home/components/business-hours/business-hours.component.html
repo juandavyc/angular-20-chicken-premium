@@ -1,0 +1,96 @@
+<section class="text-base-content text-center w-full">
+  <div class="container mx-auto">
+    <div class="grid sm:grid-cols-2 grid-cols-1 gap-6 py-10 place-items-center">
+      <div class="flex flex-col gap-3">
+        @for (businessHour of businessHours; track $index; let last = $last;) {
+          <p class="text-lg">
+            <span class="font-medium">
+             {{businessHour.title}} :
+            </span>
+            <span
+              [class]="last ? 'text-red-500': 'text-lime-700'"
+              class="font-bold">
+                {{businessHour.hours}}
+            </span>
+          </p>
+        }
+
+      </div>
+
+      @let current = currentTime();
+      @if(current){
+        <div class="join">
+          <button class="btn btn-warning rounded-s-2xl flex flex-col join-item h-auto">
+            <span class="stat-value text-xl sm:text-2xl md:text-3xl">
+              {{current.hour}}
+            </span>
+            <span class="stat-title text-xs sm:text-">
+              Hora
+            </span>
+          </button>
+          <button class="btn btn-warning flex flex-col join-item h-auto">
+            <span class="stat-value text-xl sm:text-2xl md:text-3xl">
+              {{current.minute}}
+            </span>
+            <span class="stat-title text-xs sm:text-sm">
+              Minutos
+            </span>
+          </button>
+          <button class="btn btn-warning flex flex-col join-item h-auto">
+            <span class="stat-value text-xl sm:text-2xl md:text-3xl">
+              {{current.second}}
+            </span>
+            <span class="stat-title text-xs sm:text-sm">
+              Segundos
+            </span>
+          </button>
+          <button class="btn btn-warning rounded-e-2xl flex flex-col join-item h-auto">
+            <span class="stat-value text-xl sm:text-2xl md:text-3xl">
+              {{current.period}}
+            </span>
+            <span class="stat-title text-xs sm:text-sm">
+              Periodo
+            </span>
+          </button>
+        </div>
+      <!-- <div class="stats stats-horizontal shadow-sm bg-gradient-to-t from-blue-400 to-blue-300">
+          <div class="stat place-items-center">
+            <div class="stat-value text-xl sm:text-2xl md:text-3xl text-amber-700">
+              {{current.hour}}
+            </div>
+            <div class="stat-title text-xs sm:text-sm font-bold text-gray-900">
+              Hora
+            </div>
+          </div>
+          <div class="stat place-items-center">
+            <div class="stat-value text-xl sm:text-2xl md:text-3xl text-amber-700">
+              {{current.minute}}
+            </div>
+            <div class="stat-title text-xs sm:text-sm font-bold text-gray-900">
+              Minutos
+            </div>
+          </div>
+          <div class="stat place-items-center">
+            <div class="stat-value text-xl sm:text-2xl md:text-3xl text-amber-700">
+              {{current.second}}
+            </div>
+            <div class="stat-title text-xs sm:text-sm font-bold text-gray-900">
+              Segundos
+            </div>
+          </div>
+          <div class="stat place-items-center">
+            <div class="stat-value text-xl sm:text-2xl md:text-3xl text-amber-700">
+              {{current.period}}
+            </div>
+            <div class="stat-title text-xs sm:text-sm font-bold text-gray-900">
+              Periodo
+            </div>
+          </div>
+        </div> -->
+      }
+      @else{
+      <i class="fa-solid fa-clock text-7xl text-orange-400"></i>
+      }
+    </div>
+  </div>
+</section>

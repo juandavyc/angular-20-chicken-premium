@@ -1,0 +1,18 @@
+<section class="bg-gray-200 py-10 text-base-content text-center w-full">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+      @for (locationElement of locationList; track $index) {
+        <div class="flex flex-col items-center">
+          <a [href]="locationElement.url.maps">
+            <img [src]="locationElement.image"
+              alt="Mapa sede"
+              class="rounded-xl shadow-md w-full max-w-md" />
+          </a>
+          <p class="text-sm text-gray-600 mt-2">
+            <b>Sede {{locationElement.code}}</b> - {{locationElement.address}}
+          </p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

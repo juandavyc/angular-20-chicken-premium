@@ -2,14 +2,28 @@ import { ChangeDetectionStrategy, Component, signal} from '@angular/core';
 import { register} from 'swiper/element/bundle';
 import { HeroComponent } from './components/hero/hero.component';
 import { StatsComponent } from './components/stats/stats.component';
+import { UiTitleComponent } from '@shared/ui/components/ui-title/ui-title.component';
+import { ProductsComponent } from './components/products/products.component';
+import { PayMethodsComponent } from './components/pay-methods/pay-methods.component';
+import { LocationListComponent } from './components/location-list/location-list.component';
+import { BusinessHoursComponent } from './components/business-hours/business-hours.component';
+import { LocationMapsComponent } from './components/location-maps/location-maps.component';
+
 
 register();
 @Component({
   selector: 'app-home',
   imports: [
     // RouterLink,
+    UiTitleComponent,
     HeroComponent,
     StatsComponent,
+    ProductsComponent,
+    PayMethodsComponent,
+    LocationListComponent,
+    LocationMapsComponent,
+    BusinessHoursComponent,
+
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

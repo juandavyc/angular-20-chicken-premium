@@ -3,7 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 import { SidebarComponent } from '../components/sidebar/sidebar.component';
 import { DockComponent } from '../components/dock/dock.component';
-import { FooterBlackComponent } from '@shared/components/footer-black/footer-black.component';
+import { FooterBlackComponent } from '@shared/ui/components/footer-black/footer-black.component';
+
 
 @Component({
   selector: 'app-layout',

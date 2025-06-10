@@ -43,21 +43,90 @@ export const homeConfig = {
       title: 'Sedes',
       value: 2,
       description: 'Activas',
-      icon: 'fa-solid fa-circle-user',
+      icon: 'fa-solid fa-map-marker-alt',
     },
     {
       title: 'Calidad',
       value: '100%',
       description: 'Premium',
-      icon: 'fa-solid fa-circle-user',
+      icon: 'fa-solid fa-award',
     },
     {
       title: 'Años de',
       value: '5',
       description: 'Experiencia',
-      icon: 'fa-solid fa-circle-user',
+      icon: 'fa-solid fa-hourglass-half',
+    }
+  ],
+  products:[
+    {
+      title: 'Pastured Chicken Tenders',
+      description: '3x more Omega-3s, 50% more Vitamins A, D, E, 21% less Saturated Fat compared',
+      image: 'images/home/product-1.jpg',
+      url: '/shop/products/product-1'
+    },
+    {
+      title: 'Pastured Chicken Breast',
+      description: 'Three skinless breasts per package. Each package weighs 1.0-1.5 lbs',
+      image: 'images/home/product-2.jpg',
+      url: '/shop/products/product-1'
+    },
+    {
+      title: 'Pastured Chicken Thighs',
+      description: 'Three bone-in and skin-on chicken thighs per package. Each package weighs 1.0 - 1.5 lbs',
+      image: 'images/home/product-3.jpg',
+      url: '/shop/products/product-1'
+    },
+    {
+      title: 'Pastured Chicken Wings',
+      description: 'Four skin-on chicken wings per package. Each package weighs 0.8 - 1.2 lbs Rich flavor',
+      image: 'images/home/product-4.jpg',
+      url: '/shop/products/product-1'
+    },
+  ],
+  locationList:[
+    {
+      code:'01',
+      address:'Dirección 100 #100 - 1 local 1-20',
+      location: 'Melgar - Tolima',
+      image: 'images/home/map-1.jpg',
+      url:{
+        maps: 'https://maps.app.goo.gl/vD94ZNfDMdrxn2dq9',
+        waze: 'https://ul.waze.com/ul?place=ChIJzXwPxqaZP44R7VGgkWDNj8E&ll=4.60191280%2C-74.07204110&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location'
+      }
+    },
+    {
+      code:'02',
+      address:'Dirección 200 #200 - 2 local 2-40',
+      location: 'San Martin - Meta',
+      image: 'images/home/map-2.jpg',
+      url:{
+        maps: 'https://maps.app.goo.gl/vD94ZNfDMdrxn2dq9',
+        waze: 'https://ul.waze.com/ul?place=ChIJzXwPxqaZP44R7VGgkWDNj8E&ll=4.60191280%2C-74.07204110&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location'
+      }
+    }
+  ],
+  businessHours:[
+    {
+      title:'Lunes a Viernes',
+      hours: '06:00 AM - 06:30 PM'
+    },
+    {
+      title:'Sábados',
+      hours: '06:00 AM - 04:30 PM'
+    },
+    {
+      title:'Domingos',
+      hours: '08:00 AM - 02:30 PM'
+    },
+    {
+      title:'Festivos',
+      hours: 'No hay atención'
     }
   ]
+
+
+
 }
 
 

@@ -1,129 +1,30 @@
-<!-- <div class="hero h-[50vh] sm:h-[60vh] md:h-[70vh] shadow-md" [style]="background"> -->
-<!-- <div class="hero-overlay "></div> -->
-
-<!-- <div class="container text-white flex flex-col lg:flex-row-reverse justify-between items-center gap-10">
-    <div class="flex justify-center xs:justify-end flex-1">
-      <img [src]="logo" class="rounded-lg animate-soft-bounce max-w-[180px] lg:max-w-[290px] lg:max-h-[340px]" alt="pasteleria jb - logo" />
-    </div>
-    <div class="flex flex-col gap-5 lg:text-start text-center">
-      <h1 class="text-3xl lg:text-5xl ">
-        ¿Pensando en pollo?
-      </h1>
-      <p class="text-lg md:text-xl font-semibold">
-        Piensa en nosotros
-      </p>
-      <div class="flex lg:justify-start justify-center">
-        <a class="btn btn-soft btn-success btn-lg" [routerLink]="['/shop']">
-          <i class="fa-solid fa-cart-shopping"></i>
-          Ir a la Tienda
-        </a>
-      </div>
-    </div> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- style="--swiper-navigation-color: #fff;" -->
-<!-- <div class="swiper">
-  <swiper-container class="single-slider max-h-[70vh]" autoplay-disable-on-interaction="false" effect="fade" #swiperRef>
-    @for (item of [0,1,2]; track $index; let i = $index;) {
-    <swiper-slide class="slide">
-
-      <div class="relative">
-        <img [src]="'images/background-'+i+'.jpg'" class="w-full h-[70vh] object-cover object-center" />
-        <div class="absolute top-0 w-full h-full bg-neutral/25"></div>
-        <div class="absolute top-0 w-full h-full bg-neutral/50 backdrop-blur-[3px] flex flex-col justify-center items-center">
-          <div class="w-[90vw] flex flex-col lg:flex-row-reverse justify-between items-center gap-5">
-            <div class="flex ">
-
-              <img [src]="logo" class="rounded-lg animate-soft-bounce max-w-96 h-48" alt="pasteleria jb - logo" />
-            </div>
-            <div class="flex flex-col gap-5 lg:text-start text-center text-white">
-              <h1 class="text-3xl lg:text-5xl ">
-                Letrero <br> de los mejores pollos {{i}}
-              </h1>
-              <p class="text-lg md:text-xl font-semibold">
-                Pollos, gallinas, pernil
-              </p>
-              <div class="flex lg:justify-start justify-center">
-                <a class="btn btn-soft btn-success btn-lg" href="/local">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  Ir a la Tienda
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </swiper-slide>
-    }
-  </swiper-container>
-</div> -->
-
 <hero />
-<stats/>
+<stats />
 
-<div class="flex flex-col items-center gap-3 m-3">
-  <h3 class="text-4xl font-bold">Productos</h3>
-  <div class="w-[160px] h-[1px] bg-gray-300 relative mx-auto my-2">
-    <div class="absolute left-1/2 -translate-x-1/2 w-[40px] h-[2px] bg-red-500"></div>
-  </div>
-  <p>Crudo, entero y por presas</p>
+<ui-title
+  title="Productos"
+  subtitle="Pollo Crudo, entero y por presas"/>
 
-</div>
+<products />
+<pay-methods />
+<div class="my-10"></div>
 
-<div class="flex flex-col justify-center items-center gap-5 ">
-  <div class="container mx-3">
-    <div class="grid sm:gap-6 gap-10 sm:grid-cols-2 lg:grid-cols-4 justify-center">
-      @for (item of [1,2,3,4]; track $index) {
-      <div class="mx-auto">
-        <div class="relative sm:w-72 md:w-64 w-80 bg-transparent hover:scale-105 transition-transform h-full">
-          <div class="px-3">
-            <img src="images/product.jpg" alt="Whole Chicken" class="w-full h-64 object-cover border-2 border-red-400 rounded-t-xl" />
-          </div>
-          <div class="relative bottom-[25px] bg-red-600 text-white px-4 py-6 clip-diagonals">
-            <h3 class="text-lg font-semibold text-end">Whole Chicken (Griller)</h3>
-            <p class="text-sm mt-1">We are wholesale suppliers, bulk exporters of Whole Chicken.</p>
-          </div>
-          <div class="flex justify-center">
-            <button class="btn btn-error rounded-3xl text-base-100">
-              Detalles
-            </button>
-          </div>
-        </div>
-      </div>
-      }
-    </div>
-    <div class="flex justify-center my-10">
-      <a class="btn btn-outline btn-primary" href="/productos">
-        Ver más productos
-      </a>
-    </div>
-  </div>
-  <section class="py-10 bg-gray-200 text-base-content text-center w-full">
+<ui-title
+  title="Encuéntranos"
+  subtitle="Contamos con 2 sedes para estar más cerca de ti"/>
 
-    <div class="grid sm:grid-cols-4 grid-cols-2 gap-5">
+<location-list/>
+<div class="my-10"></div>
+<location-maps/>
 
-      <img src="images/pay-methods/visa.png" alt="visa">
-      <img src="images/pay-methods/mastercard.png" alt="visa">
-      <img src="images/pay-methods/nequi.png" alt="visa">
+<div class="my-10"></div>
+<ui-title
+  title="Horario y días de atención"
+  subtitle="Porque tu tiempo es importante, aquí están nuestros horarios"/>
 
-      <img src="images/pay-methods/daviplata.png" alt="visa">
-    </div>
-
-  </section>
-
-  <div class="flex flex-col items-center gap-3 m-3">
-    <h3 class="text-4xl font-bold">Encuentranos en</h3>
-    <div class="w-[160px] h-[1px] bg-gray-300 relative mx-auto my-2">
-      <div class="absolute left-1/2 -translate-x-1/2 w-[40px] h-[2px] bg-red-500"></div>
-    </div>
-    <p>Crudo, entero y por presas</p>
-  </div>
-
-  <div class="container mx-3">
+<business-hours/>
+  <!-- <div class="container mx-3">
     <ul class="list bg-base-100 rounded-box shadow-md">
-
-      <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Consulta nuestros horarios de atencion</li>
-
       <li class="list-row">
         <div class="text-4xl font-thin opacity-30 tabular-nums">01</div>
         <div class="list-col-grow">
@@ -137,10 +38,8 @@
           <button class="btn">maps</button>
         </div>
       </li>
-
       <li class="list-row">
         <div class="text-4xl font-thin opacity-30 tabular-nums">02</div>
-
         <div class="list-col-grow">
           <div> Direccion 100 # 100 - 1 local 1- 20 </div>
           <div> Sede en [Mpio] [Dpto]</div>
@@ -149,7 +48,6 @@
           <button class="btn">waze</button>
           <button class="btn">maps</button>
         </div>
-
       </li>
     </ul>
     <section class="my-20">
@@ -167,40 +65,6 @@
         </div>
       </div>
     </section>
-  </div>
-</div>
-
-<div class="flex flex-col items-center gap-3 m-3">
-  <h3 class="text-4xl font-bold">
-    las mejores recetas
-  </h3>
-  <div class="w-[160px] h-[1px] bg-gray-300 relative mx-auto my-2">
-    <div class="absolute left-1/2 -translate-x-1/2 w-[40px] h-[2px] bg-red-500"></div>
-  </div>
-  <p>prepara en casa</p>
-</div>
-<div class="flex flex-col justify-center items-center gap-5 ">
-  <div class="container px-3">
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-      @for (item of [1,2,3,4]; track $index) {
-
-      <div class="card bg-base-100 image-full shadow-sm">
-        <figure>
-          <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">Card Title</h2>
-          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Buy Now</button>
-          </div>
-        </div>
-      </div>
-      }
-
-    </div>
-  </div>
-</div>
+  </div> -->
 
 
-<div class="mb-40"></div>

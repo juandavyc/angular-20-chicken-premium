@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, output } from '@angular/core';
-import { LogoComponent } from '@shared/components/logo/logo.component';
 import { MenuItemsComponent } from '../menu-items/menu-items.component';
+import { LogoComponent } from '@shared/ui/components/logo/logo.component';
 
 @Component({
   selector: 'navbar',
