@@ -3,6 +3,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { interval, map, startWith, tap } from 'rxjs';
 import { BusinessHour } from '../../interfaces/businness-hours.interface';
 import { homeConfig } from '../../configs/home.config';
+import { UiTitleComponent } from '@shared/ui/components/ui-title/ui-title.component';
 
 interface Current {
   hour: string;
@@ -13,7 +14,9 @@ interface Current {
 
 @Component({
   selector: 'business-hours',
-  imports: [],
+  imports: [
+    UiTitleComponent,
+  ],
   styleUrl: './business-hours.component.css',
   templateUrl: './business-hours.component.html',
   //changeDetection: ChangeDetectionStrategy.OnPush,

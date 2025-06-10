@@ -1,0 +1,22 @@
+<section class="bg-neutral-100 pt-10 pb-20  text-base-contentw-full">
+  <div class="container mx-auto">
+    <ui-title
+      title="Preguntas frecuentes"
+      subtitle="Todo lo que necesitas saber antes de comprar"
+      data-aos="zoom-in-up"/>
+    @for (question of questions; track $index) {
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 my-1" data-aos="fade-right">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold text-start">
+          <i class="fa-solid fa-circle-question text-orange-400"></i>
+          {{question.question}}
+        </div>
+        <div class="collapse-content">
+          <p class="text-center">
+            {{question.answer}}
+          </p>
+        </div>
+      </div>
+    }
+  </div>
+</section>

@@ -13,7 +13,7 @@ import { FooterBlackComponent } from '@shared/ui/components/footer-black/footer-
     NavbarComponent,
     SidebarComponent,
     FooterBlackComponent,
-    DockComponent,
+    // DockComponent,
   ],
   templateUrl: './layout.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

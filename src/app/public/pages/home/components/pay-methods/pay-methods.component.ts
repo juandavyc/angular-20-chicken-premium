@@ -1,4 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component } from '@angular/core';
+import { PayMethod } from '../../interfaces';
+import { homeConfig } from '../../configs/home.config';
 
 @Component({
   selector: 'pay-methods',
@@ -8,5 +10,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class PayMethodsComponent {
 
+  protected readonly payMethods:PayMethod[] = homeConfig.payMethods;
 
 }

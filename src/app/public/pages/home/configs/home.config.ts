@@ -58,7 +58,7 @@ export const homeConfig = {
       icon: 'fa-solid fa-hourglass-half',
     }
   ],
-  products:[
+  products: [
     {
       title: 'Pastured Chicken Tenders',
       description: '3x more Omega-3s, 50% more Vitamins A, D, E, 21% less Saturated Fat compared',
@@ -84,43 +84,79 @@ export const homeConfig = {
       url: '/shop/products/product-1'
     },
   ],
-  locationList:[
+  payMethods: [
     {
-      code:'01',
-      address:'Dirección 100 #100 - 1 local 1-20',
+      image: 'images/pay-methods/visa.png',
+      alt: 'Visa',
+    },
+    {
+      image: 'images/pay-methods/mastercard.png',
+      alt: 'Mastercard',
+    },
+    {
+      image: 'images/pay-methods/nequi.png',
+      alt: 'Nequi',
+    },
+    {
+      image: 'images/pay-methods/daviplata.png',
+      alt: 'Daviplata',
+    },
+  ],
+  locationList: [
+    {
+      code: '01',
+      address: 'Dirección 100 #100 - 1 local 1-20',
       location: 'Melgar - Tolima',
       image: 'images/home/map-1.jpg',
-      url:{
+      url: {
         maps: 'https://maps.app.goo.gl/vD94ZNfDMdrxn2dq9',
         waze: 'https://ul.waze.com/ul?place=ChIJzXwPxqaZP44R7VGgkWDNj8E&ll=4.60191280%2C-74.07204110&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location'
       }
     },
     {
-      code:'02',
-      address:'Dirección 200 #200 - 2 local 2-40',
+      code: '02',
+      address: 'Dirección 200 #200 - 2 local 2-40',
       location: 'San Martin - Meta',
       image: 'images/home/map-2.jpg',
-      url:{
+      url: {
         maps: 'https://maps.app.goo.gl/vD94ZNfDMdrxn2dq9',
         waze: 'https://ul.waze.com/ul?place=ChIJzXwPxqaZP44R7VGgkWDNj8E&ll=4.60191280%2C-74.07204110&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location'
       }
     }
   ],
-  businessHours:[
+  questions: [
     {
-      title:'Lunes a Viernes',
+      question: "¿Hacen domicilios y cuánto cuesta el envío?",
+      answer: "Sí, realizamos envíos. Si tu pedido es menor a $100.000, se aplica un costo adicional por el domicilio."
+    },
+    {
+      question: "¿Puedo comprar pollo por presas o solo entero?",
+      answer: "Puedes elegir entre pollo entero o por presas, como pechuga, alas, muslos y más."
+    },
+    {
+      question: "¿Qué tipo de pollo venden?",
+      answer: "Vendemos pollo crudo tipo griller, fresco, entero o por presas, ideal para preparar en casa o en negocios."
+    },
+    {
+      question: "¿Hacen entregas a otras ciudades o solo local?",
+      answer: "Actualmente las entregas se hacen dentro del municipio. Para otras zonas, consulta disponibilidad."
+    }
+  ],
+  businessHours: [
+    {
+      title: 'Lunes a Viernes',
       hours: '06:00 AM - 06:30 PM'
     },
     {
-      title:'Sábados',
+      title: 'Sábados',
       hours: '06:00 AM - 04:30 PM'
     },
     {
-      title:'Domingos',
+      title: 'Domingos',
       hours: '08:00 AM - 02:30 PM'
     },
     {
-      title:'Festivos',
+      title: 'Festivos',
       hours: 'No hay atención'
     }
   ]

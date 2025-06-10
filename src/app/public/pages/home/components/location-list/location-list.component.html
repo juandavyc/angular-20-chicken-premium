@@ -1,11 +1,17 @@
 <div class="container mx-auto">
-  <ul class="list bg-base-200 rounded-box shadow-md">
-    @for (locationElement of locationList; track $index) {
-      <li class="list-row items-center hover:bg-base-300">
+  <ul class="list rounded-box shadow-md">
+    @for (locationElement of locationList; track $index; let first = $first;) {
+      <li class="list-row items-center hover:bg-amber-200 bg-amber-100"
+        data-aos="fade-right">
         <div class="text-3xl font-thin opacity-30 tabular-nums">
-          {{locationElement.code}}
+          @if(first){
+            <i class="fa-solid fa-house"></i>
+          }
+          @else{
+            <i class="fa-solid fa-location-dot"></i>
+          }
         </div>
-        <div class="list-col-grow sm:text-base text-sm">
+        <div class="list-col-grow sm:text-base text-sm ">
           <div class="flex flex-col gap-3">
             <p class="font-bold">
               {{locationElement.address}}
@@ -17,12 +23,12 @@
         </div>
         <div class="flex sm:flex-row flex-col gap-2">
           <a [href]="locationElement.url.waze"
-            class="btn btn-info btn-md md:btn-lg">
+            class="btn btn-warning btn-md md:btn-lg">
               <i class="fa-brands fa-waze"></i>
               Waze
           </a>
           <a [href]="locationElement.url.maps"
-            class="btn btn-accent btn-md md:btn-lg">
+            class="btn btn-warning btn-md md:btn-lg">
               <i class="fa-solid fa-map"></i>
               Maps
           </a>
