@@ -3,11 +3,11 @@
 </div> -->
 <div class="navbar-start lg:block hidden">
   <div class="join join-horizontal">
-    <button class="btn rounded-s-3xl join-item">
+    <a [href]="'tel:'+whatsappNumber" class="btn rounded-s-3xl join-item">
       <i class="fa-solid fa-phone-volume"></i>
-    </button>
+    </a>
     <button class="btn rounded-e-3xl join-item">
-      322 220 5301
+      {{callNumber}}
     </button>
   </div>
 </div>
@@ -31,16 +31,18 @@
   <div class="hidden flex-none lg:block">
     <menu-items />
   </div>
-  <div class="flex-none gap-3 lg:hidden">
-    <div class="join join-horizontal">
-      <button class="btn rounded-s-3xl join-item">
-        322 220 5301
-      </button>
-      <button class="btn rounded-e-3xl join-item"
-        (click)="onToggleDrawer()">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+  <div class="flex-none gap-5 lg:hidden">
+    <div class="join join-horizontal mr-3">
+      <a [href]="'tel:'+callNumber" class="btn rounded-s-3xl join-item">
+        <i class="fa-solid fa-phone-volume"></i>
+      </a>
+      <a [href]="whatsappNumber" class="btn rounded-e-3xl join-item">
+        <i class="fa-brands fa-whatsapp text-[17px]"></i>
+      </a>
     </div>
+    <button class="btn btn-warning rounded-3xl" (click)="onToggleDrawer()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
   </div>
 </div>
 

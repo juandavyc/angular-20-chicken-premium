@@ -13,6 +13,6 @@ import { homeConfig } from '../../configs/home.config';
 })
 export class FrequentQuestionsComponent {
 
-  protected questions:Question[] = homeConfig.questions;
+  public questions:Question[] = homeConfig.questions;
 
 }

@@ -1,8 +1,9 @@
 import { booleanAttribute, ChangeDetectionStrategy, Component, input, linkedSignal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { AppAssets } from '@core/configs';
 
-const NAVBAR = 'menu menu-horizontal text-white';
-const SIDEBAR = 'menu menu-vertical menu-xl w-full text-black';
+const NAVBAR = 'menu menu-horizontal text-white uppercase';
+const SIDEBAR = 'menu menu-vertical menu-lg w-full text-black';
 
 @Component({
   selector: 'menu-items',
@@ -20,6 +21,8 @@ const SIDEBAR = 'menu menu-vertical menu-xl w-full text-black';
 export class MenuItemsComponent {
 
   public isSidebar = input(false, { transform: booleanAttribute })
+
+  public urlPhoneNumber = `https://wa.me/${AppAssets.contact.phoneNumber}`;
 
   public menuClasses = linkedSignal({
     source: this.isSidebar,

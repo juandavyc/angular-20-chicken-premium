@@ -10,6 +10,6 @@ import { homeConfig } from '../../configs/home.config';
 })
 export class PayMethodsComponent {
 
-  protected readonly payMethods:PayMethod[] = homeConfig.payMethods;
+  public readonly payMethods:PayMethod[] = homeConfig.payMethods;
 
 }

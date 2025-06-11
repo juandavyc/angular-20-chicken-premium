@@ -14,10 +14,12 @@
             {{category.description}}
           </p>
           <div class="card-actions justify-end">
-           <button class="btn bg-green-500 text-white border-[#4eaa0c] shadow-none">
+          <a class="btn btn-success btn-lg text-white "
+            [href]="whatsappUrl+category.message"
+            target="_blank">
               <i class="fa-brands fa-whatsapp"></i>
-                Mas informacion
-            </button>
+                Mas información
+            </a>
           </div>
         </div>
       </div>

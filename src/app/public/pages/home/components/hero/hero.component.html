@@ -21,10 +21,12 @@
                   {{slide.subtitle}}
                 </p>
                 <div class="flex lg:justify-start justify-center">
-                  <button class="btn btn-success border-b-4 text-white px-6 py-3 rounded-lg shadow">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                      {{slide.action.title}}
-                  </button>
+                  <a [href]="slide.action.url"
+                    target="_blank"
+                    class="btn btn-success border-b-4 text-white px-6 py-3 rounded-lg shadow">
+                      <i class="fa-solid" [class]="slide.action.icon"></i>
+                        {{slide.action.title}}
+                  </a>
                 </div>
               </div>
             </div>

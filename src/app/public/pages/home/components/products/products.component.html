@@ -16,7 +16,7 @@
               <a [routerLink]="product.url">
                 <img [src]="product.image"
                   alt="Whole Chicken"
-                  class="w-full h-64 object-cover border-2 border-red-400 rounded-t-xl hover:scale-105 transition-transform " />
+                  class="w-full h-64 object-cover border-4 border-red-500 rounded-t-xl hover:scale-105 transition-transform " />
               </a>
             </div>
             <div class="relative bottom-[25px] bg-red-600 text-white px-4 py-6 h-32 clip-diagonals">
@@ -28,7 +28,8 @@
             </p>
             </div>
             <div class="flex justify-center">
-              <a [href]="product.url"
+              <a [href]="whatsappUrl+product.url"
+                target="_blank"
                 class="btn btn-warning py-2 px-4 rounded-3xl transition">
                 <i class="fa-solid fa-box-open"></i>
                   Detalles del producto
@@ -44,10 +45,11 @@
       <p class="text-gray-700 text-base">
         Explora todo nuestro catálogo
       </p>
-      <a routerLink="/shop"
+      <a [href]="catalogUrl"
+        target="_blank"
         class="btn btn-lg btn-success border-b-4 text-white rounded-lg shadow">
-          <i class="fas fa-store mr-2"></i>
-            Ver más productos
+        <i class="fas fa-book-open mr-2"></i>
+          Ver más productos
       </a>
     </div>
   </div>

@@ -23,7 +23,7 @@ interface Current {
 })
 export class BusinessHoursComponent {
 
-  protected readonly businessHours: BusinessHour[] = homeConfig.businessHours;
+  public readonly businessHours: BusinessHour[] = homeConfig.businessHours;
 
   public currentTime = toSignal<Current>(
     interval(1000).pipe(

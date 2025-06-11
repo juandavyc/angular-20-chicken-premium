@@ -9,4 +9,5 @@ export interface Hero {
 interface Action {
   title: string;
   icon: string;
+  url:string;
 }

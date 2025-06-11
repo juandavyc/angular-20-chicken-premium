@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { AppAssets } from '@core/configs';
 
 @Component({
   selector: 'whatsapp',
@@ -6,4 +7,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   templateUrl: './whatsapp.component.html',
   //changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class WhatsappComponent { }
+export class WhatsappComponent {
+
+  public urlPhoneNumber = `https://wa.me/${AppAssets.contact.phoneNumber}`;
+
+}

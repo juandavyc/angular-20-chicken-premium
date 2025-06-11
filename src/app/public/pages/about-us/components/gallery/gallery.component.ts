@@ -8,25 +8,24 @@ register();
   imports: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './gallery.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  //changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GalleryComponent {
 
   private swiperRef = viewChild.required<ElementRef<SwiperContainer>>('swiperRef');
 
-  protected images = [
-    'images/home/hero-0.jpg',
-    'images/home/hero-1.jpg',
-    'images/home/hero-2.jpg',
-    'images/home/product-1.jpg',
-    'images/home/product-2.jpg',
-    'images/home/product-3.jpg',
-    'images/home/product-4.jpg',
-    'images/home/category-1.jpg',
-    'images/home/category-2.jpg',
-    'images/home/category-3.jpg',
-    'images/home/category-4.jpg',
-
+  public images = [
+    'https://i.postimg.cc/2jbh7Lwx/hero-0.jpg',
+    'https://i.postimg.cc/fTYd641t/hero-1.jpg',
+    'https://i.postimg.cc/YCkF7nwX/hero-2.jpg',
+    'https://i.postimg.cc/mDczjKQr/product-1.jpg',
+    'https://i.postimg.cc/4drKSw5Q/product-2.jpg',
+    'https://i.postimg.cc/C5kZTDrT/product-3.jpg',
+    'https://i.postimg.cc/ZYdvdtb7/product-4.jpg',
+    'https://i.postimg.cc/G29hrY2g/category-1.jpg',
+    'https://i.postimg.cc/50G9t0Q4/category-2.jpg',
+    'https://i.postimg.cc/7h2HJkSg/category-3.jpg',
+    'https://i.postimg.cc/NLvg1zxZ/category-4.jpg',
   ]
 
   constructor() {

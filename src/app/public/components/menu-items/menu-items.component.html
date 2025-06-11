@@ -1,14 +1,20 @@
-<ul class="text-sm uppercase gap-1" [class]="menuClasses()">
+<ul class="text-sm gap-1" [class]="menuClasses()">
   <li>
     <a [routerLink]="['/']"
       routerLinkActive="bg-white text-neutral shadow-sm rounded-xl"
       [routerLinkActiveOptions]="{exact:true}">
+      <div class="sm:hidden block">
+          <i class="fa-solid fa-house text-neutral-400 w-5"></i>
+      </div>
         Inicio
     </a>
   </li>
   <li>
     <a [routerLink]="['/about-us']"
       routerLinkActive="bg-white text-neutral shadow-sm rounded-xl">
+      <div class="sm:hidden block">
+        <i class="fa-solid fa-briefcase text-neutral-400 w-5"></i>
+      </div>
         Nosotros
     </a>
   </li>
@@ -19,8 +25,11 @@
     </a>
   </li> -->
   <li>
-    <a [routerLink]="['/contact-us']"
+    <a [href]="urlPhoneNumber"
       routerLinkActive="bg-white text-neutral shadow-sm rounded-xl">
+      <div class="sm:hidden block">
+        <i class="fa-solid fa-phone-volume text-neutral-400 w-5"></i>
+      </div>
         Contacto
     </a>
   </li>

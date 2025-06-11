@@ -13,6 +13,6 @@ import { UiTitleComponent } from '@shared/ui/components/ui-title/ui-title.compon
 })
 export class LocationListComponent {
 
-  protected readonly locationList: LocationElement[] = homeConfig.locationList;
+  public readonly locationList: LocationElement[] = homeConfig.locationList;
 
 }
