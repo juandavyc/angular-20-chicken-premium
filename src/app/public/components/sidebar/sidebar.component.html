@@ -1,10 +1,7 @@
-<div class="drawer-overlay"
-  (click)="onToggleDrawer()">
-</div>
+<div class="drawer-overlay" (click)="onToggleDrawer()"></div>
 <div class="bg-base-100 w-80 h-screen">
-  <div class="flex flex-col gap-5 pt-4">
+  <div class="flex flex-col gap-5 pt-4" (click)="onToggleDrawer()">
     <logo class="text-center py-4" />
-      <menu-items isSidebar/>
+    <menu-items isSidebar />
   </div>
 </div>
-

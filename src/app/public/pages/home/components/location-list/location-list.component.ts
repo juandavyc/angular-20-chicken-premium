@@ -1,10 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { LocationElement } from '../../interfaces/location-element.interface';
 import { homeConfig } from '../../configs/home.config';
+import { UiTitleComponent } from '@shared/ui/components/ui-title/ui-title.component';
 
 @Component({
   selector: 'location-list',
-  imports: [],
+  imports: [
+    UiTitleComponent,
+  ],
   templateUrl: './location-list.component.html',
   //changeDetection: ChangeDetectionStrategy.OnPush,
 })

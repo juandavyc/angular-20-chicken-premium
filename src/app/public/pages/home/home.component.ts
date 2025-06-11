@@ -8,6 +8,7 @@ import { PayMethodsComponent } from './components/pay-methods/pay-methods.compon
 import { LocationListComponent } from './components/location-list/location-list.component';
 import { BusinessHoursComponent } from './components/business-hours/business-hours.component';
 import { FrequentQuestionsComponent } from './components/frequent-questions/frequent-questions.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 
 
 register();
@@ -15,7 +16,6 @@ register();
   selector: 'app-home',
   imports: [
     // RouterLink,
-    UiTitleComponent,
     HeroComponent,
     StatsComponent,
     ProductsComponent,
@@ -23,8 +23,7 @@ register();
     LocationListComponent,
     FrequentQuestionsComponent,
     BusinessHoursComponent,
-
-
+    CategoriesComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

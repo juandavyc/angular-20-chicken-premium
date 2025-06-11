@@ -3,9 +3,6 @@ import { AppAssets } from "@core/configs";
 const appLogo = AppAssets.logo.base;
 
 export const homeConfig = {
-
-
-
   hero: [
     {
       title: 'Pollo fresco',
@@ -159,6 +156,32 @@ export const homeConfig = {
       title: 'Festivos',
       hours: 'No hay atención'
     }
+  ],
+  categories:[
+    {
+      title: 'Minoristas',
+      description: 'Compra pequeña para consumo diario',
+      message:'xxx',
+      image:'images/home/category-1.jpg'
+    },
+    {
+      title: 'Mayoristas',
+      description: 'Pedidos grandes para negocios o eventos',
+      message:'xxx',
+      image:'images/home/category-2.jpg'
+    },
+    {
+      title: 'Pollo Crudo',
+      description: 'Entero, presas, filete y más',
+      message:'xxx',
+      image:'images/home/category-3.jpg'
+    },
+    {
+      title: 'Otros Productos',
+      description: 'Menudencias, vísceras y complementos',
+      message:'xxx',
+      image:'images/home/category-4.jpg'
+    },
   ]
 
 

@@ -1,0 +1,45 @@
+<div class="flex flex-col gap-5">
+  <h2 class="text-4xl font-normal text-center"
+    data-aos="fade-right">
+      Galeria
+  </h2>
+  <p class="text-gray-600 text-center"
+    data-aos="fade-right">
+      Un proceso controlado que asegura sabor, higiene y excelencia en cada entrega
+  </p>
+  <div class="border-t border-neutral-300 border-dashed w-full py-1"></div>
+  <div class="swiper w-full bg-base-300 rounded-box"
+    style="--swiper-navigation-color: #000;">
+    <swiper-container
+      class="single-slider"
+      thumbs-swiper=".mySwiper2"
+      space-between="10"
+      navigation="true" autoplay-delay="2500"
+      autoplay-disable-on-interaction="false"
+      #swiperRef>
+      @for (image of images; track $index) {
+        <swiper-slide class="slide">
+          <img [src]="image"
+            class="w-full max-h-[70vh] object-contain rounded-box"
+            alt="gallery" />
+        </swiper-slide>
+      }
+    </swiper-container>
+    <div class="my-2"></div>
+    <swiper-container
+      class="mySwiper2"
+      space-between="10"
+      slides-per-view="3"
+      free-mode="true"
+      watch-slides-progress="true">
+      @for (image of images; track $index) {
+        <swiper-slide class="slide">
+          <img [src]="image"
+            class="w-full md:h-32 h-20 object-cover rounded-box"
+            alt="gallery" />
+        </swiper-slide>
+      }
+    </swiper-container>
+    <div class="swiper-pagination !relative !bottom-0 !mt-4"></div>
+  </div>
+</div>

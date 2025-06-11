@@ -9,38 +9,31 @@
     </p>
   </aside>
   <nav class="sm:order-2 order-3">
-      <h6 class="footer-title">Enlaces</h6>
-      <div class="grid grid-flow-row gap-[14px]">
-        <a class="link link-hover hover:text-pink-500"
-          [routerLink]="['/about-us']">
-          Nosotros
-        </a>
-        <a class="link link-hover hover:text-pink-500"
-          [routerLink]="['/contact-us']">
-          Contacto
-        </a>
-        <a class="link link-hover hover:text-pink-500"
-          [routerLink]="['/term-and-conditions']">
-          Términos y condiciones
-        </a>
-        <a class="link link-hover hover:text-primary"
-          href="juandavyc.netlify.app">
-          Designed & Developed by: <strong>juandavyc</strong>
-        </a>
-      </div>
-    </nav>
+    <h6 class="footer-title">Enlaces</h6>
+    <div class="grid grid-flow-row gap-[14px]">
+      <a class="link link-hover hover:text-pink-500" [routerLink]="['/about-us']">
+        Nosotros
+      </a>
+      <a class="link link-hover hover:text-pink-500" [routerLink]="['/contact-us']">
+        Contacto
+      </a>
+      <a class="link link-hover hover:text-pink-500" [routerLink]="['/term-and-conditions']">
+        Términos y condiciones
+      </a>
+      <a class="link link-hover hover:text-primary" href="https://juandavyc.netlify.app/home">
+        Designed & Developed by: <strong>juandavyc</strong>
+      </a>
+    </div>
+  </nav>
   <nav>
     <h6 class="footer-title">Vigilados por</h6>
     <div class="flex flex-col gap-3">
-      <div class="w-full h-12 rounded-2xl bg-green-300 text-black py-5">
-        Logo Certificado Salud
-      </div>
-      <div class="w-full h-12 rounded-2xl  bg-blue-300 text-black py-5">
-        Logo Certificado Calidad
-      </div>
-      <div class="w-full h-12 rounded-2xl bg-red-300 text-black py-5">
-        Logo Otra entidad
-      </div>
+      <img src="images/certification/invima.jpg"
+        class="w-14 rounded"
+        alt="invima">
+      <img src="images/certification/fenavi.jpg"
+        class="w-14 rounded"
+        alt="fenavi">
     </div>
   </nav>
 

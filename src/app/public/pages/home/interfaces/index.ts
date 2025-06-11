@@ -1,4 +1,5 @@
 export * from './businness-hours.interface';
+export * from './category.interface';
 export * from './hero.interface';
 export * from './location-element.interface';
 export * from './pay-methods.interface';

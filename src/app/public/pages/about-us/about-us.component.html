@@ -1,99 +1,13 @@
-<section class="my-30">
-  <div class="container mx-auto shadow bg-white rounded-xl shadow-gray-300 border-base-200 border p-10">
-    <div class="flex flex-col gap-10">
-      <div class="grid md:grid-cols-3 grid-cols-1 gap-10 items-center">
-        <div class="col-span-1 items-center">
-          <img src="images/about-us/cover.jpg" class="mx-auto rounded-xl shadow-xl md:w-full w-[300px] object-cover">
-        </div>
-        <div class="md:col-span-2 col-span-1">
-          <h2 class="text-4xl font-bold text-orange-500 mb-4 sm:text-start text-center">
-            Nuestra empresa
-          </h2>
+<section class="py-20 bg-neutral-50">
 
-          <p class="text-gray-600 mb-4">
-            We are a premium supplier of fresh and frozen chicken products, committed to quality,
-            hygiene, and excellence. With two active locations, we serve both wholesale and retail
-            customers with top-grade poultry products.
-          </p>
-          <p class="text-gray-600 mb-6">
-            Our mission is to bring farm-fresh quality to your table while maintaining the highest standards of processing and packaging.
-          </p>
-        </div>
-      </div>
-      <div class="border-t border-neutral-300 border-dashed"></div>
-      <h2 class="text-4xl font-bold text-orange-500 mb-4 text-center">
-        Nuestro origen
-      </h2>
-      <div class="w-[160px] h-[1px] bg-gray-300 relative mx-auto my-2">
-    <div class="absolute left-1/2 -translate-x-1/2 w-[40px] h-[2px] bg-red-500"></div>
-  </div>
-      <ul class="timeline timeline-vertical">
-        <li>
-          <div class="timeline-start timeline-box">First Macintosh computer</div>
-          <div class="timeline-middle">
-            <i class="fa-solid fa-circle-check"></i>
-          </div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div class="timeline-middle">
-            <i class="fa-solid fa-circle-check"></i>
-          </div>
-          <div class="timeline-end timeline-box">iMac</div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div class="timeline-start timeline-box">iPod</div>
-          <div class="timeline-middle">
-            <i class="fa-solid fa-circle-check"></i>
-          </div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div class="timeline-middle">
-            <i class="fa-solid fa-circle-check"></i>
-          </div>
-          <div class="timeline-end timeline-box">iPhone</div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div class="timeline-start timeline-box">Apple Watch</div>
-          <div class="timeline-middle">
-            <i class="fa-solid fa-circle-check"></i>
-          </div>
-        </li>
-      </ul>
-      <div class="border-t border-neutral-300 border-dashed"></div>
-      <h2 class="text-4xl font-bold text-orange-500 mb-4 text-center">
-        Galeria
-      </h2>
-      <div class="w-[160px] h-[1px] bg-gray-300 relative mx-auto my-2">
-    <div class="absolute left-1/2 -translate-x-1/2 w-[40px] h-[2px] bg-red-500"></div>
-  </div>
-      <div class="swiper w-full bg-base-300 rounded-box" style="--swiper-navigation-color: #000;">
-        <swiper-container class="single-slider" thumbs-swiper=".mySwiper2" space-between="10" navigation="true" autoplay-delay="2500"
-          autoplay-disable-on-interaction="false" #swiperRef>
-          @for (item of [0,1,2,3,4]; track $index) {
-          <swiper-slide class="slide">
-            <img src="images/about-us/cover.jpg" class="w-full max-h-[70vh] object-contain rounded-box" alt="cover-image" />
-          </swiper-slide>
-          }
-        </swiper-container>
-        <swiper-container class="mySwiper2" space-between="10" slides-per-view="4" free-mode="true" watch-slides-progress="true">
-          @for (item of [0,1,2,3,4,5,6,7]; track $index) {
-          <swiper-slide class="slide">
-            <img src="images/about-us/cover.jpg" class="w-full h-auto object-contain rounded-box" alt="cover-image" />
-          </swiper-slide>
-          }
-        </swiper-container>
-        <!-- <div class="swiper-pagination !relative !bottom-0 !mt-4"></div>
-        <div class="swiper-scrollbar !h-1 !bg-gray-200 !relative !mt-4">
-          <div class="swiper-scrollbar-drag !bg-primary"></div>
-        </div> -->
+  <ui-title title="Nosotros" subtitle="Todo lo que necesitas acerca de Nosotros" data-aos="zoom-in-up" />
+
+  <div class="bg-white shadow border-y border-base-200 my-10">
+    <div class="container mx-auto py-20 sm:px-10 px-3">
+      <div class="flex flex-col gap-10">
+        <app-mision />
+        <app-process />
+        <app-gallery />
       </div>
     </div>
   </div>
