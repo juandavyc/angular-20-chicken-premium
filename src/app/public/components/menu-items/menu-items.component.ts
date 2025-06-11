@@ -1,8 +1,8 @@
 import { booleanAttribute, ChangeDetectionStrategy, Component, input, linkedSignal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
-const NAVBAR = 'menu menu-horizontal';
-const SIDEBAR = 'menu menu-vertical bg-base-200 min-h-full w-80 p-4';
+const NAVBAR = 'menu menu-horizontal text-white';
+const SIDEBAR = 'menu menu-vertical menu-xl w-full text-black';
 
 @Component({
   selector: 'menu-items',

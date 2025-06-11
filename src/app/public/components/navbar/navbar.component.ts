@@ -9,7 +9,7 @@ import { LogoComponent } from '@shared/ui/components/logo/logo.component';
     MenuItemsComponent,
   ],
   host: {
-    'class': 'navbar bg-gradient-to-t from-red-700 to-red-600 shadow-lg shadow-neutral-300',
+    'class': 'fixed z-20 navbar bg-gradient-to-t from-red-700 to-red-600 ',
   },
   templateUrl: './navbar.component.html',
   //changeDetection: ChangeDetectionStrategy.OnPush,
