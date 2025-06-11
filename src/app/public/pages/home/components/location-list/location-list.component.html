@@ -5,11 +5,11 @@
   subtitle="Contamos con 2 sedes para estar más cerca de ti"
   data-aos="zoom-in-up"/>
 
-  <ul class="list rounded-box shadow-md">
+  <ul class="list">
     @for (locationElement of locationList; track $index; let first = $first;) {
       <li class="list-row items-center hover:bg-amber-200 bg-amber-100"
         data-aos="fade-right">
-        <div class="text-3xl font-thin opacity-30 tabular-nums">
+        <div class="text-3xl font-thin opacity-30 tabular-nums w-9 text-center">
           @if(first){
             <i class="fa-solid fa-house"></i>
           }
